@@ -101,9 +101,9 @@ void loop() {
   myMotorDriver.setDrive(0, 1, Output);
 
   myOLED.erase();
-  sprintf(pout, "set: %.1f", rpm);
+  sprintf(pout, "rpm: %.1f", rpm);
   myOLED.text(0,0,pout);
-  sprintf(pout, "rpm: %.2f", Setpoint);
+  sprintf(pout, "set: %.1f", Setpoint);
   myOLED.text(0,10,pout);
   myOLED.display();
 
